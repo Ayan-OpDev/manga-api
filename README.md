@@ -89,5 +89,3 @@ example :https://mangamint.kaedenoki.net/api/chapter/after-transformation-mine-a
 
 ## Showcase
 App Showcase that use this API (you can add your app by edit this readme)
-
-- [MangaMint](https://github.com/febryardiansyah/manga_mint) Flutter Manga Reader Application by [Febry ardiansyah](https://github.com/febryardiansyah)
