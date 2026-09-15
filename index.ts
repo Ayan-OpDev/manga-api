@@ -17,11 +17,9 @@ app.use("/api", (_req: Request, res: Response) => {
   res.send({
     status: true,
     message:
-      "For more info, check out https://github.com/febryardiansyah/manga-api",
+      "Welcome",
     find_me_on: {
-      facebook: "https://www.facebook.com/febry.ardiansyah.792/",
-      instagram: "https://instagram.com/febry_ardiansyah24",
-      github: "https://github.com/febryardiansyah/manga-api",
+      github: "https://github.com/Ayan-OpDev/manga-api",
     },
   });
 });
@@ -32,6 +30,11 @@ app.use("*", (_req: Request, res: Response) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log("Listening on PORT:" + PORT);
-});
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}
+
+// Export the app for Vercel
+export default app;
